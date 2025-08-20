@@ -1,0 +1,17 @@
+{
+  "users": {
+    "capabilities": [
+      "accept_friend_request",
+      "add_friend",
+      "decline_friend_request",
+      "delete_friend",
+      "get_followers",
+      "get_friend_requests",
+      "get_friends",
+      "get_mutual",
+      "get_subscriptions",
+      "get_user_info",
+      "search_users"
+    ]
+  }
+}

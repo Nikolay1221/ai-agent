@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Agent Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Autonomous Agent</h1>
+            <p>Control and monitor your AI agent in real-time.</p>
+        </header>
+
+        <div class="main-layout">
+            <div id="toolbox" class="toolbox hidden">
+                <h2>Toolbox</h2>
+                <div id="toolbox-content">
+                    <!-- Accordion with draggable tools will be loaded here -->
+                </div>
+            </div>
+
+            <div class="agent-controls">
+                <div class="control-panel">
+                    <div class="goal-input">
+                        <label for="goal-editor">Agent's Goal:</label>
+                        <button id="toggle-toolbox-btn">Show Tools</button>
+                        <div id="goal-editor" contenteditable="true" class="goal-editor-area">найти пользователя с ID=1</div>
+                    </div>
+                    <div class="buttons">
+                        <button id="start-btn">Start Agent</button>
+                        <button id="pause-btn" disabled>Pause</button>
+                        <button id="stop-btn" disabled>Stop Agent</button>
+                    </div>
+                    <div id="pause-info" class="hidden">
+                        <p>Agent is paused. You can edit the goal above and then resume.</p>
+                    </div>
+                </div>
+                
+                <div class="log-container">
+                    <h2>Live Log</h2>
+                    <pre id="log-output"></pre>
+                </div>
+            </div>
+        </div>
+
+        <div id="correction-panel" class="correction-panel hidden">
+            <label for="correction-input">Interruption Detected! Provide your correction:</label>
+            <input type="text" id="correction-input" placeholder="e.g., 'No, find their 3 latest posts instead.'">
+            <button id="submit-correction-btn">Submit Correction</button>
+            <button id="resume-btn">Resume Without Correction</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

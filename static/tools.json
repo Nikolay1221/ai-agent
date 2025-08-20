@@ -1,0 +1,666 @@
+{
+    "messages": {
+        "title": "Messages",
+        "description": "Работа с сообщениями и диалогами ВКонтакте",
+        "hints": "Используйте для получения диалогов, отправки сообщений, работы с историей переписки",
+        "tools": [
+            {
+                "name": "Get Dialogs",
+                "description": "Получить список диалогов пользователя",
+                "hints": "Используйте для получения списка всех диалогов. peer_id > 2000000000 - это групповые чаты",
+                "data": {
+                    "method": "get_conversations",
+                    "params": {"count": 10}
+                }
+            },
+            {
+                "name": "Get History",
+                "description": "Получить историю сообщений с конкретным пользователем или чатом",
+                "hints": "peer_id: положительный - личные сообщения, отрицательный - групповые чаты. Для групп: peer_id = -group_id - 2000000000",
+                "data": {
+                    "method": "get_history",
+                    "params": {"peer_id": 123, "count": 5}
+                }
+            },
+            {
+                "name": "Send Message",
+                "description": "Отправить сообщение пользователю",
+                "hints": "Для личных сообщений используйте user_id, для групп: peer_id = -group_id - 2000000000",
+                "data": {
+                    "method": "send_message",
+                    "params": {"peer_id": 123, "message": "Привет"}
+                }
+            },
+            {
+                "name": "Send to Chat",
+                "description": "Отправить сообщение в групповой чат",
+                "hints": "peer_id для групп: -group_id - 2000000000. Например, группа 123 = peer_id -2000000123",
+                "data": {
+                    "method": "send_message",
+                    "params": {"peer_id": 2000000003, "message": "Всем привет"}
+                }
+            },
+            {
+                "name": "Mark as Read",
+                "description": "Отметить сообщения как прочитанные",
+                "hints": "Используйте после получения сообщений, чтобы убрать счетчик непрочитанных",
+                "data": {
+                    "method": "mark_as_read",
+                    "params": {"peer_id": 123}
+                }
+            },
+            {
+                "name": "Send Photo",
+                "description": "Отправить фото с сообщением",
+                "hints": "photo_path должен быть абсолютным путем к файлу. Поддерживаются форматы: jpg, png, gif",
+                "data": {
+                    "method": "send_photo",
+                    "params": {"user_id": 123, "photo_path": "C:/path/to/image.jpg", "message": "Фото"}
+                }
+            },
+            {
+                "name": "Get Unread Messages",
+                "description": "Получить количество непрочитанных сообщений",
+                "hints": "Используйте для проверки новых сообщений перед их обработкой",
+                "data": {
+                    "method": "get_unread_messages",
+                    "params": {}
+                }
+            },
+            {
+                "name": "Set Typing Status",
+                "description": "Показать статус 'печатает'",
+                "hints": "Используйте перед отправкой длинных сообщений, чтобы показать активность",
+                "data": {
+                    "method": "set_typing_status",
+                    "params": {"user_id": 123, "typing": true}
+                }
+            },
+            {
+                "name": "Search Messages",
+                "description": "Поиск сообщений по тексту",
+                "hints": "Поиск работает только в диалогах, где у вас есть доступ к истории",
+                "data": {
+                    "method": "search_messages",
+                    "params": {"query": "привет", "peer_id": 123, "count": 10}
+                }
+            },
+            {
+                "name": "Get Message by ID",
+                "description": "Получить конкретное сообщение по ID",
+                "hints": "Используйте когда нужно получить полную информацию о конкретном сообщении",
+                "data": {
+                    "method": "get_message_by_id",
+                    "params": {"message_id": 123}
+                }
+            },
+            {
+                "name": "Delete Message",
+                "description": "Удалить сообщение",
+                "hints": "delete_for_all=true удаляет для всех участников (только в групповых чатах)",
+                "data": {
+                    "method": "delete_message",
+                    "params": {"message_id": 123, "delete_for_all": false}
+                }
+            },
+            {
+                "name": "Edit Message",
+                "description": "Редактировать отправленное сообщение",
+                "hints": "Можно редактировать только свои сообщения в течение 24 часов",
+                "data": {
+                    "method": "edit_message",
+                    "params": {"peer_id": 123, "message_id": 456, "message": "Новый текст"}
+                }
+            },
+            {
+                "name": "Await Any Event",
+                "description": "Ожидать любых событий (сообщения, лайки и т.д.)",
+                "hints": "Используйте для мониторинга активности. duration_s - максимальное время ожидания в секундах",
+                "data": {
+                    "method": "await_any_event",
+                    "params": {"duration_s": 600}
+                }
+            },
+            {
+                "name": "Get Recognition Stats",
+                "description": "Получить статистику распознавания",
+                "hints": "Показывает количество обработанных аудио/видео файлов",
+                "data": {
+                    "method": "get_recognition_statistics",
+                    "params": {}
+                }
+            },
+            {
+                "name": "Clear Recognition Cache",
+                "description": "Очистить кэш распознавания",
+                "hints": "Используйте при проблемах с распознаванием или для освобождения памяти",
+                "data": {
+                    "method": "clear_recognition_cache_data",
+                    "params": {}
+                }
+            }
+        ]
+    },
+    "users": {
+        "title": "Users",
+        "description": "Работа с пользователями ВКонтакте",
+        "hints": "Используйте для получения информации о пользователях, поиска, работы с друзьями",
+        "tools": [
+            {
+                "name": "Get User Info",
+                "description": "Получить информацию о пользователе(ях)",
+                "hints": "user_ids может быть числом, строкой с ID или screen_name (например, 'durov'). fields - список полей через запятую",
+                "data": {
+                    "method": "get_user_info",
+                    "params": {"user_ids": "1,durov", "fields": "photo_200"}
+                }
+            },
+            {
+                "name": "Search Users",
+                "description": "Поиск пользователей по имени",
+                "hints": "Поиск работает по имени и фамилии. Результаты могут быть ограничены настройками приватности",
+                "data": {
+                    "method": "search_users",
+                    "params": {"q": "alex", "count": 5}
+                }
+            },
+            {
+                "name": "Get Friends",
+                "description": "Получить список друзей пользователя",
+                "hints": "Если user_id не указан, возвращает друзей текущего пользователя. fields - список полей через запятую",
+                "data": {
+                    "method": "get_friends",
+                    "params": {"user_id": "123", "count": 20, "fields": "photo_200"}
+                }
+            },
+            {
+                "name": "Get Followers",
+                "description": "Получить подписчиков пользователя",
+                "hints": "Работает только для публичных профилей или если вы являетесь владельцем профиля",
+                "data": {
+                    "method": "get_followers",
+                    "params": {"user_id": "123", "count": 20}
+                }
+            },
+            {
+                "name": "Get Subscriptions",
+                "description": "Получить подписки пользователя",
+                "hints": "extended=true возвращает полную информацию о группах и пользователях",
+                "data": {
+                    "method": "get_subscriptions",
+                    "params": {"user_id": "123", "count": 20, "extended": true}
+                }
+            },
+            {
+                "name": "Get Mutual Friends",
+                "description": "Получить общих друзей",
+                "hints": "Показывает друзей, которые есть у source_uid и target_uids одновременно",
+                "data": {
+                    "method": "get_mutual",
+                    "params": {"source_uid": 123, "target_uids": "456,789"}
+                }
+            },
+            {
+                "name": "Get Friend Requests",
+                "description": "Получить заявки в друзья",
+                "hints": "out=true - исходящие заявки, out=false - входящие заявки",
+                "data": {
+                    "method": "get_friend_requests",
+                    "params": {"out": false, "count": 20}
+                }
+            },
+            {
+                "name": "Add Friend",
+                "description": "Добавить пользователя в друзья",
+                "hints": "text - сообщение, которое будет отправлено с заявкой в друзья",
+                "data": {
+                    "method": "add_friend",
+                    "params": {"user_id": 123, "text": "Привет!"}
+                }
+            },
+            {
+                "name": "Delete Friend",
+                "description": "Удалить пользователя из друзей",
+                "hints": "Пользователь будет удален из списка друзей без уведомления",
+                "data": {
+                    "method": "delete_friend",
+                    "params": {"user_id": 123}
+                }
+            },
+            {
+                "name": "Accept Friend Request",
+                "description": "Принять заявку в друзья",
+                "hints": "Используйте после получения списка заявок в друзья",
+                "data": {
+                    "method": "accept_friend_request",
+                    "params": {"user_id": 123}
+                }
+            },
+            {
+                "name": "Decline Friend Request",
+                "description": "Отклонить заявку в друзья",
+                "hints": "Используйте для отклонения нежелательных заявок в друзья",
+                "data": {
+                    "method": "decline_friend_request",
+                    "params": {"user_id": 123}
+                }
+            }
+        ]
+    },
+    "groups": {
+        "title": "Groups",
+        "description": "Работа с группами ВКонтакте",
+        "hints": "Используйте для получения информации о группах, поиска, работы с участниками",
+        "tools": [
+            {
+                "name": "Get Group Info",
+                "description": "Получить информацию о группе(ах)",
+                "hints": "group_ids может быть числом, строкой с ID или screen_name (например, 'durov'). fields - список полей через запятую",
+                "data": {
+                    "method": "get_group_info",
+                    "params": {"group_ids": "durov", "fields": "description"}
+                }
+            },
+            {
+                "name": "Search Groups",
+                "description": "Поиск групп по названию",
+                "hints": "Поиск работает по названию и описанию группы. Результаты отсортированы по релевантности",
+                "data": {
+                    "method": "search_groups",
+                    "params": {"q": "программирование", "count": 10}
+                }
+            },
+            {
+                "name": "Get Group Members",
+                "description": "Получить участников группы",
+                "hints": "Работает только для публичных групп или если вы являетесь участником. fields - список полей через запятую",
+                "data": {
+                    "method": "get_group_members",
+                    "params": {"group_id": "durov", "count": 20, "fields": "photo_200"}
+                }
+            }
+        ]
+    },
+    "wall": {
+        "title": "Wall",
+        "description": "Работа со стеной пользователей и групп",
+        "hints": "Используйте для получения постов, комментариев, создания контента на стене",
+        "tools": [
+            {
+                "name": "Get Wall Posts",
+                "description": "Получить записи со стены",
+                "hints": "owner_id: положительный - стена пользователя, отрицательный - стена группы. Для групп: owner_id = -group_id",
+                "data": {
+                    "method": "get_wall_posts",
+                    "params": {"owner_id": "-1", "count": 5}
+                }
+            },
+            {
+                "name": "Get Comments",
+                "description": "Получить комментарии к записи",
+                "hints": "Используйте после получения записи со стены для просмотра комментариев",
+                "data": {
+                    "method": "get_comments",
+                    "params": {"owner_id": "-1", "post_id": 123, "count": 10}
+                }
+            },
+            {
+                "name": "Create Comment",
+                "description": "Создать комментарий к записи",
+                "hints": "Можно комментировать только записи, к которым у вас есть доступ",
+                "data": {
+                    "method": "create_comment",
+                    "params": {"owner_id": "-1", "post_id": 123, "message": "Отличный пост!"}
+                }
+            },
+            {
+                "name": "Post Photo",
+                "description": "Опубликовать фото на стене",
+                "hints": "photo_path должен быть абсолютным путем к файлу. owner_id - ID владельца стены (положительный для пользователя, отрицательный для группы)",
+                "data": {
+                    "method": "post_photo",
+                    "params": {"owner_id": "649110209", "photo_path": "C:/path/to/image.jpg", "message": "Фото"}
+                }
+            },
+            {
+                "name": "Pin Post",
+                "description": "Закрепить запись на стене",
+                "hints": "Можно закрепить только свои записи или записи в группах, где вы администратор",
+                "data": {
+                    "method": "pin_post",
+                    "params": {"owner_id": "-1", "post_id": 123}
+                }
+            },
+            {
+                "name": "Unpin Post",
+                "description": "Открепить запись со стены",
+                "hints": "Используйте для открепления ранее закрепленной записи",
+                "data": {
+                    "method": "unpin_post",
+                    "params": {"owner_id": "-1", "post_id": 123}
+                }
+            },
+            {
+                "name": "Edit Post",
+                "description": "Редактировать запись на стене",
+                "hints": "Можно редактировать только свои записи или записи в группах, где вы администратор",
+                "data": {
+                    "method": "edit_post",
+                    "params": {"owner_id": "-1", "post_id": 123, "message": "Новый текст"}
+                }
+            },
+            {
+                "name": "Delete Post",
+                "description": "Удалить запись со стены",
+                "hints": "Можно удалить только свои записи или записи в группах, где вы администратор",
+                "data": {
+                    "method": "delete_post",
+                    "params": {"owner_id": "-1", "post_id": 123}
+                }
+            },
+            {
+                "name": "Watch Wall Posts",
+                "description": "Мониторинг новых записей на стене",
+                "hints": "Используйте для отслеживания новых записей. interval_s - интервал проверки в секундах",
+                "data": {
+                    "method": "watch_wall_posts",
+                    "params": {"owner_id": "-1", "duration_s": 60, "interval_s": 10}
+                }
+            },
+            {
+                "name": "Watch Wall Comments",
+                "description": "Мониторинг новых комментариев к записи",
+                "hints": "Используйте для отслеживания новых комментариев к конкретной записи",
+                "data": {
+                    "method": "watch_wall_comments",
+                    "params": {"owner_id": "-1", "post_id": 123, "duration_s": 60, "interval_s": 10}
+                }
+            },
+            {
+                "name": "Get Post Likers",
+                "description": "Получить список пользователей, поставивших лайк",
+                "hints": "Показывает пользователей, которые поставили лайк на конкретную запись",
+                "data": {
+                    "method": "get_post_likers",
+                    "params": {"owner_id": "-1", "post_id": 123, "count": 10}
+                }
+            }
+        ]
+    },
+    "likes": {
+        "title": "Likes",
+        "description": "Работа с лайками",
+        "hints": "Используйте для проверки, добавления и удаления лайков на различные объекты",
+        "tools": [
+            {
+                "name": "Check if Liked",
+                "description": "Проверить, поставлен ли лайк",
+                "hints": "type может быть: post, comment, photo, video, note, topic, market_item. item_id - ID объекта",
+                "data": {
+                    "method": "is_liked",
+                    "params": {"type": "post", "owner_id": "-1", "item_id": 123}
+                }
+            },
+            {
+                "name": "Add Like",
+                "description": "Поставить лайк",
+                "hints": "Можно лайкать только объекты, к которым у вас есть доступ",
+                "data": {
+                    "method": "add",
+                    "params": {"type": "post", "owner_id": "-1", "item_id": 123}
+                }
+            },
+            {
+                "name": "Remove Like",
+                "description": "Убрать лайк",
+                "hints": "Используйте для отмены ранее поставленного лайка",
+                "data": {
+                    "method": "delete",
+                    "params": {"type": "post", "owner_id": "-1", "item_id": 123}
+                }
+            }
+        ]
+    },
+    "photos": {
+        "title": "Photos",
+        "description": "Работа с фотографиями",
+        "hints": "Используйте для получения фотографий, альбомов, работы с комментариями к фото",
+        "tools": [
+            {
+                "name": "Get Photos",
+                "description": "Получить фотографии пользователя",
+                "hints": "album_id: profile - профильные фото, wall - фото со стены, saved - сохраненные фото",
+                "data": {
+                    "method": "photos_get",
+                    "params": {"owner_id": "1", "album_id": "profile", "count": 3}
+                }
+            },
+            {
+                "name": "Get Albums",
+                "description": "Получить альбомы с фотографиями",
+                "hints": "Показывает все альбомы пользователя или группы",
+                "data": {
+                    "method": "photos_get_albums",
+                    "params": {"owner_id": "1", "count": 10}
+                }
+            },
+            {
+                "name": "Get Photo Comments",
+                "description": "Получить комментарии к фотографии",
+                "hints": "Используйте для просмотра комментариев к конкретной фотографии",
+                "data": {
+                    "method": "photos_get_comments",
+                    "params": {"owner_id": "1", "photo_id": 123, "count": 10}
+                }
+            },
+            {
+                "name": "Create Photo Comment",
+                "description": "Создать комментарий к фотографии",
+                "hints": "Можно комментировать только фотографии, к которым у вас есть доступ",
+                "data": {
+                    "method": "photos_create_comment",
+                    "params": {"owner_id": "1", "photo_id": 123, "message": "Красивое фото!"}
+                }
+            }
+        ]
+    },
+    "docs": {
+        "title": "Documents",
+        "description": "Работа с документами",
+        "hints": "Используйте для поиска и получения документов пользователей и групп",
+        "tools": [
+            {
+                "name": "Search Documents",
+                "description": "Поиск документов по названию",
+                "hints": "Поиск работает по названию документа. Результаты могут быть ограничены настройками приватности",
+                "data": {
+                    "method": "docs_search",
+                    "params": {"q": "инструкция", "count": 10}
+                }
+            },
+            {
+                "name": "Get Documents",
+                "description": "Получить документы пользователя или группы",
+                "hints": "owner_id: положительный - документы пользователя, отрицательный - документы группы",
+                "data": {
+                    "method": "docs_get",
+                    "params": {"owner_id": "1", "count": 10}
+                }
+            }
+        ]
+    },
+    "video": {
+        "title": "Video",
+        "description": "Работа с видео",
+        "hints": "Используйте для поиска и получения видео, работы с комментариями к видео",
+        "tools": [
+            {
+                "name": "Search Video",
+                "description": "Поиск видео по названию",
+                "hints": "Поиск работает по названию и описанию видео. Результаты отсортированы по релевантности",
+                "data": {
+                    "method": "video_search",
+                    "params": {"q": "vk", "count": 10}
+                }
+            },
+            {
+                "name": "Get Video",
+                "description": "Получить видео пользователя или группы",
+                "hints": "owner_id: положительный - видео пользователя, отрицательный - видео группы",
+                "data": {
+                    "method": "video_get",
+                    "params": {"owner_id": "1", "count": 10}
+                }
+            },
+            {
+                "name": "Get Video Comments",
+                "description": "Получить комментарии к видео",
+                "hints": "Используйте для просмотра комментариев к конкретному видео",
+                "data": {
+                    "method": "video_get_comments",
+                    "params": {"owner_id": "1", "video_id": 123, "count": 10}
+                }
+            },
+            {
+                "name": "Get Video Direct URL",
+                "description": "Получить прямую ссылку на видео",
+                "hints": "Возвращает прямую ссылку для скачивания или воспроизведения видео",
+                "data": {
+                    "method": "video_get_direct_url",
+                    "params": {"owner_id": "1", "video_id": 123}
+                }
+            }
+        ]
+    },
+    "recognition": {
+        "title": "Recognition",
+        "description": "Распознавание аудио и изображений",
+        "hints": "Используйте для транскрипции аудио и анализа изображений с помощью AI",
+        "tools": [
+            {
+                "name": "Transcribe Speech URL",
+                "description": "Транскрибировать аудио по URL",
+                "hints": "Поддерживает форматы: mp3, wav, m4a. language: ru-RU для русского, en-US для английского",
+                "data": {
+                    "method": "transcribe_speech",
+                    "params": {"audio_source": "https://example.com/audio.mp3", "language": "ru-RU", "source_type": "url"}
+                }
+            },
+            {
+                "name": "Transcribe Speech File",
+                "description": "Транскрибировать аудио файл",
+                "hints": "audio_source должен быть абсолютным путем к файлу. Поддерживает те же форматы, что и URL",
+                "data": {
+                    "method": "transcribe_speech",
+                    "params": {"audio_source": "C:/path/to/audio.mp3", "language": "ru-RU", "source_type": "file"}
+                }
+            },
+            {
+                "name": "Analyze Image URL",
+                "description": "Анализировать изображение по URL",
+                "hints": "Поддерживает форматы: jpg, png, gif. Возвращает описание содержимого изображения",
+                "data": {
+                    "method": "analyze_image",
+                    "params": {"image_source": "https://example.com/image.jpg", "source_type": "url"}
+                }
+            },
+            {
+                "name": "Analyze Image File",
+                "description": "Анализировать изображение файл",
+                "hints": "image_source должен быть абсолютным путем к файлу. Поддерживает те же форматы, что и URL",
+                "data": {
+                    "method": "analyze_image",
+                    "params": {"image_source": "C:/path/to/image.jpg", "source_type": "file"}
+                }
+            },
+            {
+                "name": "Get Supported Languages",
+                "description": "Получить поддерживаемые языки для распознавания",
+                "hints": "Используйте для проверки доступных языков перед транскрипцией",
+                "data": {
+                    "method": "get_supported_languages",
+                    "params": {}
+                }
+            },
+            {
+                "name": "Get Available Features",
+                "description": "Получить доступные возможности распознавания",
+                "hints": "Показывает все доступные функции для работы с аудио и изображениями",
+                "data": {
+                    "method": "get_available_features",
+                    "params": {}
+                }
+            }
+        ]
+    },
+    "utils": {
+        "title": "Utils",
+        "description": "Вспомогательные инструменты",
+        "hints": "Используйте для получения информации о возможностях, пагинации, пакетных запросов",
+        "tools": [
+            {
+                "name": "List Capabilities",
+                "description": "Получить список всех доступных методов",
+                "hints": "Используйте когда не знаете, какие методы доступны в конкретном инструменте",
+                "data": {
+                    "method": "list_capabilities",
+                    "params": {}
+                }
+            },
+            {
+                "name": "Describe Method",
+                "description": "Получить описание конкретного метода",
+                "hints": "Используйте для получения подробной информации о параметрах метода",
+                "data": {
+                    "method": "describe",
+                    "params": {"aggregator": "messages", "method": "get_history"}
+                }
+            },
+            {
+                "name": "Paginate",
+                "description": "Получить данные с пагинацией",
+                "hints": "Используйте для получения большого количества данных по частям. max_items - общее количество, page_size - размер страницы",
+                "data": {
+                    "method": "paginate",
+                    "params": {"api_method": "messages.getConversations", "params": {}, "max_items": 30, "page_size": 10}
+                }
+            },
+            {
+                "name": "VK Retry",
+                "description": "Выполнить запрос с автоматическими повторами",
+                "hints": "Используйте для надежного выполнения запросов с автоматической обработкой ошибок",
+                "data": {
+                    "method": "vk_retry",
+                    "params": {"api_method": "messages.getConversations", "params": {"count": 10}}
+                }
+            },
+            {
+                "name": "Resolve Screen Name",
+                "description": "Преобразовать screen_name в ID",
+                "hints": "Используйте для преобразования коротких имен (например, 'durov') в числовые ID",
+                "data": {
+                    "method": "resolve_screen_name",
+                    "params": {"screen_name": "durov"}
+                }
+            },
+            {
+                "name": "Resolve Cached",
+                "description": "Преобразовать screen_name в ID с кэшированием",
+                "hints": "ttl_s - время жизни кэша в секундах. Используйте для оптимизации частых запросов",
+                "data": {
+                    "method": "resolve_cached",
+                    "params": {"screen_name": "durov", "ttl_s": 3600}
+                }
+            },
+            {
+                "name": "Execute Batch",
+                "description": "Выполнить несколько запросов одновременно",
+                "hints": "Используйте для оптимизации - выполнение нескольких запросов одним вызовом",
+                "data": {
+                    "method": "execute_batch",
+                    "params": {"calls": [{"method": "users.get", "params": {"user_ids": "1"}}, {"method": "users.get", "params": {"user_ids": "2"}}]}
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,723 @@
+2025-08-20 04:01:17,763 - 🤝 Performing MCP handshake...
+2025-08-20 04:01:20,476 - [MCP stderr] VK API session initialized successfully.
+2025-08-20 04:01:20,476 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function users at 0x0000025F3C6B8B80> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,476 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,476 - [MCP stderr] Registered aggregator tool: users
+2025-08-20 04:01:20,476 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function groups at 0x0000025F3C6B91C0> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,476 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,476 - [MCP stderr] Registered aggregator tool: groups
+2025-08-20 04:01:20,476 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function messages at 0x0000025F3C72DF80> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,476 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,476 - [MCP stderr] Registered aggregator tool: messages
+2025-08-20 04:01:20,476 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function wall at 0x0000025F3C72ED40> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,476 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,476 - [MCP stderr] Registered aggregator tool: wall
+2025-08-20 04:01:20,476 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function likes at 0x0000025F3C72F420> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,476 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,477 - [MCP stderr] Registered aggregator tool: likes
+2025-08-20 04:01:20,477 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function photos at 0x0000025F3C72FA60> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,477 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,477 - [MCP stderr] Registered aggregator tool: photos
+2025-08-20 04:01:20,477 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function docs at 0x0000025F3C72EFC0> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,477 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,477 - [MCP stderr] Registered aggregator tool: docs
+2025-08-20 04:01:20,477 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function video at 0x0000025F3C768040> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,477 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,477 - [MCP stderr] Registered aggregator tool: video
+2025-08-20 04:01:20,477 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function utils at 0x0000025F3C7684A0> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:20,477 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:20,477 - [MCP stderr] Registered aggregator tool: utils
+2025-08-20 04:01:21,380 - ✅ Received 'tools_ready' notification - SERVER IS READY!
+2025-08-20 04:01:21,381 - [MCP stderr] C:\Users\nikol\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\json_schema.py:2324: PydanticJsonSchemaWarning: Default value <function recognition at 0x0000025F3DBF9BC0> is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+2025-08-20 04:01:21,381 - [MCP stderr] warnings.warn(message, PydanticJsonSchemaWarning)
+2025-08-20 04:01:21,381 - [MCP stderr] Registered aggregator tool: recognition
+2025-08-20 04:01:21,391 - ✅ Received initialize response
+2025-08-20 04:01:21,391 - 🤝 Handshake complete!
+2025-08-20 04:01:21,391 - 
+🔍 Using minimal tool configuration...
+2025-08-20 04:01:21,391 - 
+✅ Agent initialized with minimal user info tools.
+2025-08-20 04:01:21,391 - - Using local Gemma3 4B model: gemma3:4b
+2025-08-20 04:01:21,392 - 
+--- Starting Agent Run with task: 'Начинай общение' ---
+2025-08-20 04:01:21,392 - Loaded 1 previous steps from history.json
+2025-08-20 04:01:21,392 - 
+- Step 2 -
+2025-08-20 04:01:21,392 - Context window: 4965 tokens max
+2025-08-20 04:01:21,392 - Final prompt tokens: 448
+2025-08-20 04:01:21,392 - History items included: 1
+2025-08-20 04:01:21,392 - ✅ Context within limit: 448 <= 4965
+2025-08-20 04:01:21,392 - Asking local Gemma3 4B for next action...
+2025-08-20 04:01:44,285 - Model response tokens: 67
+2025-08-20 04:01:44,286 - Gemma3 4B response: ```json
+{
+  "action": {
+    "tool": "messages",
+    "arguments": {
+      "method": "send_message",
+      "params": {
+        "peer_id": "821539637",
+        "message": "Привет! Как дела? У меня тут непрочитанные сообщения, нужно ответить на них!"
+      }
+    }
+  }
+}
+```
+2025-08-20 04:01:44,286 - Total context tokens (prompt + response): 515
+2025-08-20 04:01:44,286 - Executing tool 'messages' with args: {'method': 'send_message', 'params': {'peer_id': '821539637', 'message': 'Привет! Как дела? У меня тут непрочитанные сообщения, нужно ответить на них!'}}
+2025-08-20 04:01:44,294 - Tool Result: {
+  "content": [
+    {
+      "type": "text",
+      "text": "❌ Ошибка отправки: '>' not supported between instances of 'str' and 'int'"
+    }
+  ],
+  "isError": false
+}
+2025-08-20 04:01:44,295 - 
+- Step 3 -
+2025-08-20 04:01:44,295 - Context window: 4965 tokens max
+2025-08-20 04:01:44,295 - Final prompt tokens: 572
+2025-08-20 04:01:44,295 - History items included: 2
+2025-08-20 04:01:44,295 - ✅ Context within limit: 572 <= 4965
+2025-08-20 04:01:44,295 - Asking local Gemma3 4B for next action...
+2025-08-20 04:01:44,322 - [MCP stderr] [08/20/25 04:01:44] INFO     Processing request of type           server.py:625
+2025-08-20 04:01:44,322 - [MCP stderr] CallToolRequest
+2025-08-20 04:02:21,235 - Model response tokens: 106
+2025-08-20 04:02:21,235 - Gemma3 4B response: ```json
+{
+  "action": {
+    "tool": "messages",
+    "arguments": {
+      "method": "get_unread_messages",
+      "params": {}
+    }
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "📬 Непрочитанные сообщения (2 диалогов):\n1. Настюха Семёнова (821539637) (3 непрочитанных): Что делаешь\n2. Анастасия Исаева (557015079) (1 непрочитанных): привет"
+      }
+    ],
+    "isError": false
+  }
+}
+```
+2025-08-20 04:02:21,235 - Total context tokens (prompt + response): 678
+2025-08-20 04:02:21,235 - Executing tool 'messages' with args: {'method': 'get_unread_messages', 'params': {}}
+2025-08-20 04:02:21,259 - [MCP stderr] [08/20/25 04:02:21] INFO     Processing request of type           server.py:625
+2025-08-20 04:02:21,259 - [MCP stderr] CallToolRequest
+2025-08-20 04:02:23,541 - Tool Result: {
+  "content": [
+    {
+      "type": "text",
+      "text": "📬 Непрочитанные сообщения (2 диалогов):\n1. Настюха Семёнова (821539637) (3 непрочитанных): Что делаешь\n2. Анастасия Исаева (557015079) (1 непрочитанных): привет"
+    }
+  ],
+  "isError": false
+}
+2025-08-20 04:02:23,542 - 
+- Step 4 -
+2025-08-20 04:02:23,543 - Context window: 4965 tokens max
+2025-08-20 04:02:23,543 - Final prompt tokens: 685
+2025-08-20 04:02:23,543 - History items included: 3
+2025-08-20 04:02:23,543 - ✅ Context within limit: 685 <= 4965
+2025-08-20 04:02:23,543 - Asking local Gemma3 4B for next action...
+2025-08-20 04:02:50,583 - Model response tokens: 69
+2025-08-20 04:02:50,583 - Gemma3 4B response: ```json
+{
+  "action": {
+    "tool": "messages",
+    "arguments": {
+      "method": "send_message",
+      "params": {
+        "peer_id": "821539637",
+        "message": "Привет! Я начинаю общение. У меня тут непрочитанные сообщения, нужно ответить на них!"
+      }
+    }
+  }
+}
+```
+2025-08-20 04:02:50,583 - Total context tokens (prompt + response): 754
+2025-08-20 04:02:50,583 - Executing tool 'messages' with args: {'method': 'send_message', 'params': {'peer_id': '821539637', 'message': 'Привет! Я начинаю общение. У меня тут непрочитанные сообщения, нужно ответить на них!'}}
+2025-08-20 04:02:50,587 - Tool Result: {
+  "content": [
+    {
+      "type": "text",
+      "text": "❌ Ошибка отправки: '>' not supported between instances of 'str' and 'int'"
+    }
+  ],
+  "isError": false
+}
+2025-08-20 04:02:50,588 - 
+- Step 5 -
+2025-08-20 04:02:50,588 - Context window: 4965 tokens max
+2025-08-20 04:02:50,588 - Final prompt tokens: 812
+2025-08-20 04:02:50,588 - History items included: 4
+2025-08-20 04:02:50,589 - ✅ Context within limit: 812 <= 4965
+2025-08-20 04:02:50,589 - Asking local Gemma3 4B for next action...
+2025-08-20 04:02:50,660 - [MCP stderr] [08/20/25 04:02:50] INFO     Processing request of type           server.py:625
+2025-08-20 04:02:50,660 - [MCP stderr] CallToolRequest
+2025-08-20 04:03:52,641 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 04:04:50,415 - Model response tokens: 106
+2025-08-20 04:04:50,415 - Gemma3 4B response: ```json
+{
+  "action": {
+    "tool": "messages",
+    "arguments": {
+      "method": "get_unread_messages",
+      "params": {}
+    }
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "📬 Непрочитанные сообщения (2 диалогов):\n1. Настюха Семёнова (821539637) (3 непрочитанных): Что делаешь\n2. Анастасия Исаева (557015079) (1 непрочитанных): привет"
+      }
+    ],
+    "isError": false
+  }
+}
+```
+2025-08-20 04:04:50,415 - Total context tokens (prompt + response): 918
+2025-08-20 04:04:50,415 - Executing tool 'messages' with args: {'method': 'get_unread_messages', 'params': {}}
+2025-08-20 04:04:50,461 - [MCP stderr] [08/20/25 04:04:50] INFO     Processing request of type           server.py:625
+2025-08-20 04:04:50,461 - [MCP stderr] CallToolRequest
+2025-08-20 04:04:52,263 - Tool Result: {
+  "content": [
+    {
+      "type": "text",
+      "text": "📬 Непрочитанные сообщения (2 диалогов):\n1. Настюха Семёнова (821539637) (3 непрочитанных): Что делаешь\n2. Анастасия Исаева (557015079) (1 непрочитанных): привет"
+    }
+  ],
+  "isError": false
+}
+2025-08-20 04:04:52,264 - 
+- Step 6 -
+2025-08-20 04:04:52,265 - Context window: 4965 tokens max
+2025-08-20 04:04:52,265 - Final prompt tokens: 924
+2025-08-20 04:04:52,265 - History items included: 5
+2025-08-20 04:04:52,265 - ✅ Context within limit: 924 <= 4965
+2025-08-20 04:04:52,265 - Asking local Gemma3 4B for next action...
+2025-08-20 04:05:54,308 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 19:58:57,581 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:00:01,649 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:00:03,650 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:00:03,650 - Gemma3 4B response: 
+2025-08-20 20:00:03,650 - Total context tokens (prompt + response): 924
+2025-08-20 20:00:03,650 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:00:03,650 - 
+- Step 6 -
+2025-08-20 20:00:03,651 - Context window: 4965 tokens max
+2025-08-20 20:00:03,651 - Final prompt tokens: 950
+2025-08-20 20:00:03,651 - History items included: 6
+2025-08-20 20:00:03,651 - ✅ Context within limit: 950 <= 4965
+2025-08-20 20:00:03,651 - Asking local Gemma3 4B for next action...
+2025-08-20 20:01:05,702 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:02:09,756 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:02:55,852 - Local Gemma3 4B API call error (attempt 3/3): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')). Retrying in 2s...
+2025-08-20 20:02:57,852 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:02:57,852 - Gemma3 4B response: 
+2025-08-20 20:02:57,853 - Total context tokens (prompt + response): 950
+2025-08-20 20:02:57,853 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:02:57,853 - 
+- Step 6 -
+2025-08-20 20:02:57,859 - Context window: 4965 tokens max
+2025-08-20 20:02:57,859 - Final prompt tokens: 975
+2025-08-20 20:02:57,860 - History items included: 7
+2025-08-20 20:02:57,860 - ✅ Context within limit: 975 <= 4965
+2025-08-20 20:02:57,860 - Asking local Gemma3 4B for next action...
+2025-08-20 20:03:59,915 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:05:03,967 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:06:08,017 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:06:10,018 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:06:10,018 - Gemma3 4B response: 
+2025-08-20 20:06:10,018 - Total context tokens (prompt + response): 975
+2025-08-20 20:06:10,019 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:06:10,019 - 
+- Step 6 -
+2025-08-20 20:06:10,025 - Context window: 4965 tokens max
+2025-08-20 20:06:10,025 - Final prompt tokens: 1001
+2025-08-20 20:06:10,025 - History items included: 8
+2025-08-20 20:06:10,026 - ✅ Context within limit: 1001 <= 4965
+2025-08-20 20:06:10,026 - Asking local Gemma3 4B for next action...
+2025-08-20 20:07:12,123 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:08:16,224 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:09:20,285 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:09:22,286 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:09:22,286 - Gemma3 4B response: 
+2025-08-20 20:09:22,286 - Total context tokens (prompt + response): 1001
+2025-08-20 20:09:22,286 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:09:22,286 - 
+- Step 6 -
+2025-08-20 20:09:22,294 - Context window: 4965 tokens max
+2025-08-20 20:09:22,294 - Final prompt tokens: 1026
+2025-08-20 20:09:22,295 - History items included: 9
+2025-08-20 20:09:22,295 - ✅ Context within limit: 1026 <= 4965
+2025-08-20 20:09:22,295 - Asking local Gemma3 4B for next action...
+2025-08-20 20:10:24,342 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:11:28,413 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:12:32,478 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:12:34,483 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:12:34,483 - Gemma3 4B response: 
+2025-08-20 20:12:34,518 - Total context tokens (prompt + response): 1026
+2025-08-20 20:12:34,519 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:12:34,520 - 
+- Step 6 -
+2025-08-20 20:12:34,534 - Context window: 4965 tokens max
+2025-08-20 20:12:34,534 - Final prompt tokens: 1052
+2025-08-20 20:12:34,534 - History items included: 10
+2025-08-20 20:12:34,534 - ✅ Context within limit: 1052 <= 4965
+2025-08-20 20:12:34,534 - Asking local Gemma3 4B for next action...
+2025-08-20 20:13:36,562 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:14:40,614 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:15:44,658 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:15:46,659 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:15:46,659 - Gemma3 4B response: 
+2025-08-20 20:15:46,659 - Total context tokens (prompt + response): 1052
+2025-08-20 20:15:46,659 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:15:46,659 - 
+- Step 6 -
+2025-08-20 20:15:46,663 - Context window: 4965 tokens max
+2025-08-20 20:15:46,663 - Final prompt tokens: 1077
+2025-08-20 20:15:46,663 - History items included: 11
+2025-08-20 20:15:46,663 - ✅ Context within limit: 1077 <= 4965
+2025-08-20 20:15:46,663 - Asking local Gemma3 4B for next action...
+2025-08-20 20:16:48,716 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:17:52,764 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:18:56,813 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:18:58,815 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:18:58,815 - Gemma3 4B response: 
+2025-08-20 20:18:58,815 - Total context tokens (prompt + response): 1077
+2025-08-20 20:18:58,815 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:18:58,815 - 
+- Step 6 -
+2025-08-20 20:18:58,825 - Context window: 4965 tokens max
+2025-08-20 20:18:58,825 - Final prompt tokens: 1103
+2025-08-20 20:18:58,825 - History items included: 12
+2025-08-20 20:18:58,825 - ✅ Context within limit: 1103 <= 4965
+2025-08-20 20:18:58,825 - Asking local Gemma3 4B for next action...
+2025-08-20 20:20:00,857 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:21:04,920 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:22:08,966 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:22:10,967 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:22:10,967 - Gemma3 4B response: 
+2025-08-20 20:22:10,967 - Total context tokens (prompt + response): 1103
+2025-08-20 20:22:10,967 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:22:10,968 - 
+- Step 6 -
+2025-08-20 20:22:10,975 - Context window: 4965 tokens max
+2025-08-20 20:22:10,975 - Final prompt tokens: 1128
+2025-08-20 20:22:10,975 - History items included: 13
+2025-08-20 20:22:10,975 - ✅ Context within limit: 1128 <= 4965
+2025-08-20 20:22:10,975 - Asking local Gemma3 4B for next action...
+2025-08-20 20:23:13,033 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:24:17,060 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:25:21,102 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:25:23,103 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:25:23,103 - Gemma3 4B response: 
+2025-08-20 20:25:23,103 - Total context tokens (prompt + response): 1128
+2025-08-20 20:25:23,103 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:25:23,103 - 
+- Step 6 -
+2025-08-20 20:25:23,112 - Context window: 4965 tokens max
+2025-08-20 20:25:23,112 - Final prompt tokens: 1154
+2025-08-20 20:25:23,112 - History items included: 14
+2025-08-20 20:25:23,112 - ✅ Context within limit: 1154 <= 4965
+2025-08-20 20:25:23,112 - Asking local Gemma3 4B for next action...
+2025-08-20 20:26:25,146 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:27:29,214 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:28:33,265 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:28:35,266 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:28:35,266 - Gemma3 4B response: 
+2025-08-20 20:28:35,267 - Total context tokens (prompt + response): 1154
+2025-08-20 20:28:35,268 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:28:35,268 - 
+- Step 6 -
+2025-08-20 20:28:35,296 - Context window: 4965 tokens max
+2025-08-20 20:28:35,297 - Final prompt tokens: 1179
+2025-08-20 20:28:35,297 - History items included: 15
+2025-08-20 20:28:35,298 - ✅ Context within limit: 1179 <= 4965
+2025-08-20 20:28:35,298 - Asking local Gemma3 4B for next action...
+2025-08-20 20:29:37,333 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:30:41,406 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:31:45,458 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:31:47,459 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:31:47,459 - Gemma3 4B response: 
+2025-08-20 20:31:47,459 - Total context tokens (prompt + response): 1179
+2025-08-20 20:31:47,459 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:31:47,459 - 
+- Step 6 -
+2025-08-20 20:31:47,469 - Context window: 4965 tokens max
+2025-08-20 20:31:47,469 - Final prompt tokens: 1205
+2025-08-20 20:31:47,469 - History items included: 16
+2025-08-20 20:31:47,469 - ✅ Context within limit: 1205 <= 4965
+2025-08-20 20:31:47,469 - Asking local Gemma3 4B for next action...
+2025-08-20 20:32:49,525 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:33:53,563 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:34:57,607 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:34:59,608 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:34:59,608 - Gemma3 4B response: 
+2025-08-20 20:34:59,608 - Total context tokens (prompt + response): 1205
+2025-08-20 20:34:59,608 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:34:59,608 - 
+- Step 6 -
+2025-08-20 20:34:59,621 - Context window: 4965 tokens max
+2025-08-20 20:34:59,621 - Final prompt tokens: 1230
+2025-08-20 20:34:59,621 - History items included: 17
+2025-08-20 20:34:59,621 - ✅ Context within limit: 1230 <= 4965
+2025-08-20 20:34:59,621 - Asking local Gemma3 4B for next action...
+2025-08-20 20:36:01,659 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:37:05,692 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:38:09,734 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:38:11,735 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:38:11,735 - Gemma3 4B response: 
+2025-08-20 20:38:11,735 - Total context tokens (prompt + response): 1230
+2025-08-20 20:38:11,735 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:38:11,735 - 
+- Step 6 -
+2025-08-20 20:38:11,739 - Context window: 4965 tokens max
+2025-08-20 20:38:11,739 - Final prompt tokens: 1256
+2025-08-20 20:38:11,739 - History items included: 18
+2025-08-20 20:38:11,739 - ✅ Context within limit: 1256 <= 4965
+2025-08-20 20:38:11,739 - Asking local Gemma3 4B for next action...
+2025-08-20 20:39:13,794 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:40:17,856 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:41:21,892 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:41:23,893 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:41:23,893 - Gemma3 4B response: 
+2025-08-20 20:41:23,893 - Total context tokens (prompt + response): 1256
+2025-08-20 20:41:23,893 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:41:23,893 - 
+- Step 6 -
+2025-08-20 20:41:23,904 - Context window: 4965 tokens max
+2025-08-20 20:41:23,904 - Final prompt tokens: 1281
+2025-08-20 20:41:23,904 - History items included: 19
+2025-08-20 20:41:23,904 - ✅ Context within limit: 1281 <= 4965
+2025-08-20 20:41:23,904 - Asking local Gemma3 4B for next action...
+2025-08-20 20:42:25,981 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:43:30,058 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:44:34,126 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:44:36,127 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:44:36,127 - Gemma3 4B response: 
+2025-08-20 20:44:36,127 - Total context tokens (prompt + response): 1281
+2025-08-20 20:44:36,127 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:44:36,127 - 
+- Step 6 -
+2025-08-20 20:44:36,135 - Context window: 4965 tokens max
+2025-08-20 20:44:36,136 - Final prompt tokens: 1307
+2025-08-20 20:44:36,136 - History items included: 20
+2025-08-20 20:44:36,136 - ✅ Context within limit: 1307 <= 4965
+2025-08-20 20:44:36,136 - Asking local Gemma3 4B for next action...
+2025-08-20 20:45:38,199 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:46:42,261 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:47:46,338 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:47:48,338 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:47:48,338 - Gemma3 4B response: 
+2025-08-20 20:47:48,338 - Total context tokens (prompt + response): 1307
+2025-08-20 20:47:48,338 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:47:48,338 - 
+- Step 6 -
+2025-08-20 20:47:48,341 - Context window: 4965 tokens max
+2025-08-20 20:47:48,341 - Final prompt tokens: 1332
+2025-08-20 20:47:48,341 - History items included: 21
+2025-08-20 20:47:48,341 - ✅ Context within limit: 1332 <= 4965
+2025-08-20 20:47:48,341 - Asking local Gemma3 4B for next action...
+2025-08-20 20:48:50,410 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:49:54,442 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:50:58,520 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:51:00,521 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:51:00,521 - Gemma3 4B response: 
+2025-08-20 20:51:00,521 - Total context tokens (prompt + response): 1332
+2025-08-20 20:51:00,521 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:51:00,521 - 
+- Step 6 -
+2025-08-20 20:51:00,524 - Context window: 4965 tokens max
+2025-08-20 20:51:00,524 - Final prompt tokens: 1358
+2025-08-20 20:51:00,524 - History items included: 22
+2025-08-20 20:51:00,524 - ✅ Context within limit: 1358 <= 4965
+2025-08-20 20:51:00,524 - Asking local Gemma3 4B for next action...
+2025-08-20 20:52:02,597 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:53:06,655 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:54:10,730 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:54:12,731 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:54:12,731 - Gemma3 4B response: 
+2025-08-20 20:54:12,731 - Total context tokens (prompt + response): 1358
+2025-08-20 20:54:12,731 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:54:12,731 - 
+- Step 6 -
+2025-08-20 20:54:12,734 - Context window: 4965 tokens max
+2025-08-20 20:54:12,734 - Final prompt tokens: 1383
+2025-08-20 20:54:12,734 - History items included: 23
+2025-08-20 20:54:12,734 - ✅ Context within limit: 1383 <= 4965
+2025-08-20 20:54:12,734 - Asking local Gemma3 4B for next action...
+2025-08-20 20:55:14,783 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:56:18,841 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:57:22,907 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:57:24,908 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 20:57:24,908 - Gemma3 4B response: 
+2025-08-20 20:57:24,909 - Total context tokens (prompt + response): 1383
+2025-08-20 20:57:24,909 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 20:57:24,909 - 
+- Step 6 -
+2025-08-20 20:57:24,928 - Context window: 4965 tokens max
+2025-08-20 20:57:24,928 - Final prompt tokens: 1409
+2025-08-20 20:57:24,928 - History items included: 24
+2025-08-20 20:57:24,928 - ✅ Context within limit: 1409 <= 4965
+2025-08-20 20:57:24,928 - Asking local Gemma3 4B for next action...
+2025-08-20 20:58:26,993 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 20:59:31,040 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:00:35,106 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:00:37,107 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:00:37,107 - Gemma3 4B response: 
+2025-08-20 21:00:37,107 - Total context tokens (prompt + response): 1409
+2025-08-20 21:00:37,107 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:00:37,107 - 
+- Step 6 -
+2025-08-20 21:00:37,110 - Context window: 4965 tokens max
+2025-08-20 21:00:37,110 - Final prompt tokens: 1434
+2025-08-20 21:00:37,110 - History items included: 25
+2025-08-20 21:00:37,110 - ✅ Context within limit: 1434 <= 4965
+2025-08-20 21:00:37,110 - Asking local Gemma3 4B for next action...
+2025-08-20 21:01:39,188 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:02:43,264 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:03:47,350 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:03:49,350 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:03:49,350 - Gemma3 4B response: 
+2025-08-20 21:03:49,350 - Total context tokens (prompt + response): 1434
+2025-08-20 21:03:49,350 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:03:49,350 - 
+- Step 6 -
+2025-08-20 21:03:49,356 - Context window: 4965 tokens max
+2025-08-20 21:03:49,358 - Final prompt tokens: 1460
+2025-08-20 21:03:49,358 - History items included: 26
+2025-08-20 21:03:49,358 - ✅ Context within limit: 1460 <= 4965
+2025-08-20 21:03:49,359 - Asking local Gemma3 4B for next action...
+2025-08-20 21:04:51,419 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:05:55,482 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:06:59,519 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:07:01,520 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:07:01,520 - Gemma3 4B response: 
+2025-08-20 21:07:01,520 - Total context tokens (prompt + response): 1460
+2025-08-20 21:07:01,520 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:07:01,520 - 
+- Step 6 -
+2025-08-20 21:07:01,530 - Context window: 4965 tokens max
+2025-08-20 21:07:01,530 - Final prompt tokens: 1485
+2025-08-20 21:07:01,530 - History items included: 27
+2025-08-20 21:07:01,530 - ✅ Context within limit: 1485 <= 4965
+2025-08-20 21:07:01,530 - Asking local Gemma3 4B for next action...
+2025-08-20 21:08:03,593 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:09:07,633 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:10:11,683 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:10:13,684 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:10:13,684 - Gemma3 4B response: 
+2025-08-20 21:10:13,686 - Total context tokens (prompt + response): 1485
+2025-08-20 21:10:13,686 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:10:13,686 - 
+- Step 6 -
+2025-08-20 21:10:13,697 - Context window: 4965 tokens max
+2025-08-20 21:10:13,697 - Final prompt tokens: 1511
+2025-08-20 21:10:13,697 - History items included: 28
+2025-08-20 21:10:13,697 - ✅ Context within limit: 1511 <= 4965
+2025-08-20 21:10:13,697 - Asking local Gemma3 4B for next action...
+2025-08-20 21:11:15,736 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:12:19,789 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:13:23,840 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:13:25,841 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:13:25,841 - Gemma3 4B response: 
+2025-08-20 21:13:25,841 - Total context tokens (prompt + response): 1511
+2025-08-20 21:13:25,841 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:13:25,841 - 
+- Step 6 -
+2025-08-20 21:13:25,846 - Context window: 4965 tokens max
+2025-08-20 21:13:25,846 - Final prompt tokens: 1536
+2025-08-20 21:13:25,846 - History items included: 29
+2025-08-20 21:13:25,847 - ✅ Context within limit: 1536 <= 4965
+2025-08-20 21:13:25,847 - Asking local Gemma3 4B for next action...
+2025-08-20 21:14:27,924 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:15:32,000 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:16:36,047 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:16:38,048 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:16:38,048 - Gemma3 4B response: 
+2025-08-20 21:16:38,048 - Total context tokens (prompt + response): 1536
+2025-08-20 21:16:38,049 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:16:38,049 - 
+- Step 6 -
+2025-08-20 21:16:38,060 - Context window: 4965 tokens max
+2025-08-20 21:16:38,061 - Final prompt tokens: 1562
+2025-08-20 21:16:38,061 - History items included: 30
+2025-08-20 21:16:38,061 - ✅ Context within limit: 1562 <= 4965
+2025-08-20 21:16:38,061 - Asking local Gemma3 4B for next action...
+2025-08-20 21:17:40,084 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:18:44,130 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:19:48,192 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:19:50,193 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:19:50,193 - Gemma3 4B response: 
+2025-08-20 21:19:50,193 - Total context tokens (prompt + response): 1562
+2025-08-20 21:19:50,193 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:19:50,193 - 
+- Step 6 -
+2025-08-20 21:19:50,209 - Context window: 4965 tokens max
+2025-08-20 21:19:50,209 - Final prompt tokens: 1587
+2025-08-20 21:19:50,209 - History items included: 31
+2025-08-20 21:19:50,209 - ✅ Context within limit: 1587 <= 4965
+2025-08-20 21:19:50,209 - Asking local Gemma3 4B for next action...
+2025-08-20 21:20:52,228 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:21:56,276 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:23:00,299 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:23:02,299 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:23:02,299 - Gemma3 4B response: 
+2025-08-20 21:23:02,299 - Total context tokens (prompt + response): 1587
+2025-08-20 21:23:02,299 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:23:02,300 - 
+- Step 6 -
+2025-08-20 21:23:02,308 - Context window: 4965 tokens max
+2025-08-20 21:23:02,308 - Final prompt tokens: 1613
+2025-08-20 21:23:02,308 - History items included: 32
+2025-08-20 21:23:02,309 - ✅ Context within limit: 1613 <= 4965
+2025-08-20 21:23:02,309 - Asking local Gemma3 4B for next action...
+2025-08-20 21:24:04,393 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:25:08,489 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:26:12,539 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:26:14,540 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:26:14,540 - Gemma3 4B response: 
+2025-08-20 21:26:14,541 - Total context tokens (prompt + response): 1613
+2025-08-20 21:26:14,541 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:26:14,543 - 
+- Step 6 -
+2025-08-20 21:26:14,563 - Context window: 4965 tokens max
+2025-08-20 21:26:14,563 - Final prompt tokens: 1638
+2025-08-20 21:26:14,564 - History items included: 33
+2025-08-20 21:26:14,564 - ✅ Context within limit: 1638 <= 4965
+2025-08-20 21:26:14,564 - Asking local Gemma3 4B for next action...
+2025-08-20 21:27:16,650 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:28:20,721 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:29:24,801 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:29:26,801 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:29:26,801 - Gemma3 4B response: 
+2025-08-20 21:29:26,801 - Total context tokens (prompt + response): 1638
+2025-08-20 21:29:26,801 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:29:26,801 - 
+- Step 6 -
+2025-08-20 21:29:26,809 - Context window: 4965 tokens max
+2025-08-20 21:29:26,810 - Final prompt tokens: 1664
+2025-08-20 21:29:26,810 - History items included: 34
+2025-08-20 21:29:26,810 - ✅ Context within limit: 1664 <= 4965
+2025-08-20 21:29:26,810 - Asking local Gemma3 4B for next action...
+2025-08-20 21:30:28,839 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:31:32,873 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:32:36,919 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:32:38,920 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:32:38,920 - Gemma3 4B response: 
+2025-08-20 21:32:38,925 - Total context tokens (prompt + response): 1664
+2025-08-20 21:32:38,925 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:32:38,925 - 
+- Step 6 -
+2025-08-20 21:32:38,933 - Context window: 4965 tokens max
+2025-08-20 21:32:38,933 - Final prompt tokens: 1689
+2025-08-20 21:32:38,933 - History items included: 35
+2025-08-20 21:32:38,933 - ✅ Context within limit: 1689 <= 4965
+2025-08-20 21:32:38,933 - Asking local Gemma3 4B for next action...
+2025-08-20 21:33:40,979 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:34:45,003 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:35:49,072 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:35:51,074 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:35:51,074 - Gemma3 4B response: 
+2025-08-20 21:35:51,074 - Total context tokens (prompt + response): 1689
+2025-08-20 21:35:51,074 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:35:51,074 - 
+- Step 6 -
+2025-08-20 21:35:51,084 - Context window: 4965 tokens max
+2025-08-20 21:35:51,084 - Final prompt tokens: 1715
+2025-08-20 21:35:51,084 - History items included: 36
+2025-08-20 21:35:51,084 - ✅ Context within limit: 1715 <= 4965
+2025-08-20 21:35:51,084 - Asking local Gemma3 4B for next action...
+2025-08-20 21:36:53,106 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:37:57,164 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:39:01,217 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:39:03,218 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:39:03,218 - Gemma3 4B response: 
+2025-08-20 21:39:03,218 - Total context tokens (prompt + response): 1715
+2025-08-20 21:39:03,219 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:39:03,219 - 
+- Step 6 -
+2025-08-20 21:39:03,224 - Context window: 4965 tokens max
+2025-08-20 21:39:03,224 - Final prompt tokens: 1740
+2025-08-20 21:39:03,224 - History items included: 37
+2025-08-20 21:39:03,224 - ✅ Context within limit: 1740 <= 4965
+2025-08-20 21:39:03,224 - Asking local Gemma3 4B for next action...
+2025-08-20 21:40:05,283 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:41:09,335 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:42:13,381 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:42:15,382 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:42:15,382 - Gemma3 4B response: 
+2025-08-20 21:42:15,382 - Total context tokens (prompt + response): 1740
+2025-08-20 21:42:15,382 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:42:15,382 - 
+- Step 6 -
+2025-08-20 21:42:15,401 - Context window: 4965 tokens max
+2025-08-20 21:42:15,402 - Final prompt tokens: 1766
+2025-08-20 21:42:15,402 - History items included: 38
+2025-08-20 21:42:15,402 - ✅ Context within limit: 1766 <= 4965
+2025-08-20 21:42:15,402 - Asking local Gemma3 4B for next action...
+2025-08-20 21:43:17,453 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:44:21,486 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:45:25,526 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:45:27,527 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:45:27,527 - Gemma3 4B response: 
+2025-08-20 21:45:27,527 - Total context tokens (prompt + response): 1766
+2025-08-20 21:45:27,527 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:45:27,527 - 
+- Step 6 -
+2025-08-20 21:45:27,535 - Context window: 4965 tokens max
+2025-08-20 21:45:27,535 - Final prompt tokens: 1791
+2025-08-20 21:45:27,535 - History items included: 39
+2025-08-20 21:45:27,535 - ✅ Context within limit: 1791 <= 4965
+2025-08-20 21:45:27,535 - Asking local Gemma3 4B for next action...
+2025-08-20 21:46:29,568 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:47:33,607 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:48:37,644 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:48:39,644 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:48:39,644 - Gemma3 4B response: 
+2025-08-20 21:48:39,644 - Total context tokens (prompt + response): 1791
+2025-08-20 21:48:39,644 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:48:39,644 - 
+- Step 6 -
+2025-08-20 21:48:39,652 - Context window: 4965 tokens max
+2025-08-20 21:48:39,652 - Final prompt tokens: 1817
+2025-08-20 21:48:39,653 - History items included: 40
+2025-08-20 21:48:39,653 - ✅ Context within limit: 1817 <= 4965
+2025-08-20 21:48:39,653 - Asking local Gemma3 4B for next action...
+2025-08-20 21:49:41,694 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:50:45,740 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:51:49,808 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:51:51,809 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:51:51,809 - Gemma3 4B response: 
+2025-08-20 21:51:51,809 - Total context tokens (prompt + response): 1817
+2025-08-20 21:51:51,809 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:51:51,809 - 
+- Step 6 -
+2025-08-20 21:51:51,814 - Context window: 4965 tokens max
+2025-08-20 21:51:51,814 - Final prompt tokens: 1842
+2025-08-20 21:51:51,814 - History items included: 41
+2025-08-20 21:51:51,814 - ✅ Context within limit: 1842 <= 4965
+2025-08-20 21:51:51,814 - Asking local Gemma3 4B for next action...
+2025-08-20 21:52:53,883 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:53:57,969 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:55:02,041 - Local Gemma3 4B API call error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:55:04,041 - Local Gemma3 4B API call failed after 3 retries.
+2025-08-20 21:55:04,041 - Gemma3 4B response: 
+2025-08-20 21:55:04,041 - Total context tokens (prompt + response): 1842
+2025-08-20 21:55:04,041 - Could not parse JSON from Gemma3 4B response. Adding error to history.
+2025-08-20 21:55:04,041 - 
+- Step 6 -
+2025-08-20 21:55:04,047 - Context window: 4965 tokens max
+2025-08-20 21:55:04,047 - Final prompt tokens: 1868
+2025-08-20 21:55:04,047 - History items included: 42
+2025-08-20 21:55:04,047 - ✅ Context within limit: 1868 <= 4965
+2025-08-20 21:55:04,047 - Asking local Gemma3 4B for next action...
+2025-08-20 21:56:06,092 - Local Gemma3 4B API call error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...
+2025-08-20 21:57:10,153 - Local Gemma3 4B API call error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60). Retrying in 2s...

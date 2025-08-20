@@ -1,0 +1,276 @@
+:root {
+    --background-color: #121212;
+    --surface-color: #1E1E1E;
+    --primary-color: #BB86FC;
+    --secondary-color: #03DAC6;
+    --on-background-color: #FFFFFF;
+    --on-surface-color: #E0E0E0;
+    --error-color: #CF6679;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--on-background-color);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Increased width for the new layout */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--surface-color);
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.main-layout {
+    display: flex;
+    gap: 2rem;
+}
+
+.toolbox {
+    flex: 1;
+    background-color: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content; /* Make it stick to the top */
+    transition: all 0.3s ease-in-out;
+}
+
+.toolbox.hidden {
+    display: none;
+}
+
+.accordion-header {
+    background-color: #2a2a2a;
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.accordion-header:hover, .accordion-header.active {
+    background-color: #333;
+}
+
+.accordion-content {
+    padding: 0 1rem;
+    background-color: var(--surface-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.toolbox h2, .toolbox h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.toolbox h3 {
+    color: var(--secondary-color);
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.draggable {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    cursor: grab;
+    transition: box-shadow 0.2s;
+}
+
+.draggable:hover {
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.draggable pre {
+    background-color: #121212;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem 0 0 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+.draggable-item {
+    background-color: #2a2a2a;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    cursor: grab;
+}
+
+.agent-controls {
+    flex: 2;
+}
+
+.goal-input textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    color: var(--on-background-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resize */
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.goal-input textarea.dragover {
+    border: 2px dashed var(--secondary-color);
+    background-color: #2a2a2a;
+}
+
+.goal-editor-area {
+    width: 100%;
+    min-height: 150px;
+    padding: 0.75rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    color: var(--on-background-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Consolas', 'Monaco', monospace;
+    overflow-y: auto;
+}
+
+.tool-pill {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    margin: 0 2px;
+    display: inline-block;
+    cursor: default;
+    user-select: none;
+}
+
+.remove-pill {
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+#start-btn:hover {
+    background-color: #a968f7;
+}
+
+#stop-btn {
+    background-color: var(--error-color);
+    color: var(--background-color);
+}
+
+#stop-btn:hover {
+    background-color: #b74659;
+}
+
+#pause-btn {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+#pause-btn.paused {
+    background-color: #FFA500; /* Orange when paused */
+}
+
+#pause-btn:hover {
+    background-color: #02b3a1;
+}
+
+button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+}
+
+.log-container {
+    background-color: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#log-output {
+    background-color: #000;
+    color: #0f0; /* Green text for a classic terminal look */
+    padding: 1rem;
+    border-radius: 4px;
+    height: 400px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.correction-panel {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #2a2a2a;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.correction-panel label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.correction-panel input {
+     width: 100%;
+    padding: 0.75rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--on-background-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
